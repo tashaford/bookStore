@@ -1,0 +1,17 @@
+{
+  "name": "book_store",
+  "version": "1.0.0",
+  "main": "book_store.js",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
