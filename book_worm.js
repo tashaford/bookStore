@@ -62,4 +62,8 @@ AngryBookWorm.prototype.readBook = function(book){
   return book.controversial ? "Oh no!" : "I like this book!";
 };
 
+AngryBookWorm.prototype.ripPages = function(book){
+  book.noOfPages -= _.random(1, book.noOfPages);
+};
+
 module.exports = BookWorm;

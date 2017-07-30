@@ -77,10 +77,10 @@ describe('Angry Book Worm', function(){
     assert.strictEqual(angry.burnBook(book1), "This book is concontroversial and has been burned");
   });
 
-  xit("should be able to rip out random num of pages from controversial book", function(){
-    var expected = 
+  it("should be able to rip out random num of pages from controversial book", function(){
+    var before = book1.noOfPages;
     angry.ripPages(book1);
-    assert.strictEqual(book1.noOfPages, expected);
+    assert.strictEqual(book1.noOfPages < before, true);
   });
 
   it("shouldn't be able to read a controversial book", function(){
