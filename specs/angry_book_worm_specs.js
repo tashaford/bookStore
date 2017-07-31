@@ -1,10 +1,10 @@
 var assert = require('assert');
 var BookWorm = require('../book_worm.js');
 var Book = require('../book.js');
-var AngryBookWorm = require('../book_worm.js');
+var AngryBookWorm = require('../angry_book_worm.js');
 
 describe('Angry Book Worm', function(){
-  var angryBookWorm;
+  var angry;
   var bw;
   var book1;
   var book2;
@@ -81,6 +81,7 @@ describe('Angry Book Worm', function(){
     var before = book1.noOfPages;
     angry.ripPages(book1);
     assert.strictEqual(book1.noOfPages < before, true);
+    assert.strictEqual(book2.noOfPages, book2.noOfPages);
   });
 
   it("shouldn't be able to read a controversial book", function(){

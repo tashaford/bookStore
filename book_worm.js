@@ -51,19 +51,4 @@ BookWorm.prototype = {
 };
 
 
-var AngryBookWorm = Object.create(BookWorm);
-AngryBookWorm.prototype.constructor = BookWorm;
-
-AngryBookWorm.prototype.burnBook = function(book){
-  return book.controversial ? "This book is concontroversial and has been burned" : "This book is not concontroversial.";
-};
-
-AngryBookWorm.prototype.readBook = function(book){
-  return book.controversial ? "Oh no!" : "I like this book!";
-};
-
-AngryBookWorm.prototype.ripPages = function(book){
-  book.noOfPages -= _.random(1, book.noOfPages);
-};
-
 module.exports = BookWorm;
